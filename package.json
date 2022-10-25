@@ -1,0 +1,42 @@
+{
+    "name": "AutomationCypress",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "cypress:open": "cypress open",
+      "cypress": "cypress run",
+      "test": "cypress run --spec \"**/*.feature\" --headless --browser chrome"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cucumber-html-reporter": "^5.3.0",
+      "cypress-xpath": "^1.6.2",
+      "del": "^6.0.0",
+      "fs": "0.0.1-security",
+      "fs-extra": "^9.1.0",
+      "loadash": "^1.0.0",
+      "mocha": "^10.1.0",
+      "mochawesome-merge": "^4.2.0"
+    },
+    "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinitions": false,
+      "step_definitions": "cypress/support/step_definitions/",
+      "cucumberJson": {
+        "generate": true,
+        "outputFolder": "cypress/cucumber-json",
+        "filePrefix": "",
+        "fileSuffix": ".cucumber"
+      }
+    },
+    "devDependencies": {
+      "cypress": "^5.6.0",
+      "cypress-cucumber-preprocessor": "^4.3.1",
+      "cypress-file-upload": "^5.0.8",
+      "cypress-plugin-tab": "^1.0.5",
+      "mochawesome": "^7.1.3"
+    }
+  }
+  

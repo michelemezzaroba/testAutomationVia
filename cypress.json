@@ -1,0 +1,21 @@
+{   "projectId": "templateId", 
+    "video": false,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "defaultCommandTimeout": 50000,
+    "chromeWebSecurity": false,
+    "pageLoadTimeout":50000,
+    "baseUrlCadastro": "https://conexaoqa.herokuapp.com/cadastrar",
+    "baseUrlPerfil": "https://conexaoqa.herokuapp.com/criar-perfil",
+    "reporterOptions": {
+      "reportDir": "reports/mochawesome-report",
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "reports/mochawesome-report/assets",
+    "ignoreTestFiles": "*.js",
+    "testFiles": "**/*.{feature,features}"
+  }
